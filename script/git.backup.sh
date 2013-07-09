@@ -51,7 +51,7 @@ do
 		then
 			# なければ pull
 			git pull origin > /dev/null
-			BACKUP_REPOS=${BACKUP_REPOS} ${repo}
+			BACKUP_REPOS=${BACKUP_REPOS}" "${repo}
 		fi
 	fi
 done
